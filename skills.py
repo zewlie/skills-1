@@ -107,11 +107,16 @@ def smallest_int(number_list):
 
     """
 
-    for number in number_list:
-        if number is None:
+    #for number in number_list:
+    #    if number is None:
+    #        return
+    #    else:
+    #        return min(number_list)
+
+        if number_list == []:
             return
         else:
-            return min(number_list)
+            return max(number_list)
 
 
 def largest_int(number_list):
@@ -127,8 +132,8 @@ def largest_int(number_list):
 
     """
 
-    for number in number_list:
-        if number is None:
+    #for number in number_list:
+        if number_list == []:
             return
         else:
             return max(number_list)
@@ -207,7 +212,7 @@ def mult_numbers(number_list):
 
     product_of_list = 1
 
-    for number in number_list[::-1]:
+    for number in number_list:
         if number is not None:
             product_of_list *= number
 
@@ -286,7 +291,8 @@ def advanced_join_strings(list_of_words):
     joined_string = joined_string.strip(' ,')
 
     return joined_string
-    
+
+
 
 # END OF ASSIGNMENT: You can ignore everything below.
 ##############################################################################
